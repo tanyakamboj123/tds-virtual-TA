@@ -1,5 +1,6 @@
 description: "TDS Virtual TA Project Sample (but not the actual evaluation) Questions"
 
+
 providers:
   # 1) Your FastAPI /query endpoint
   - id: https
@@ -20,7 +21,7 @@ providers:
       method: POST
       headers:
         Content-Type: "application/json"
-        Authorization: "Bearer {{ env.API_KEY }}"
+        Authorization: "Bearer {{ env.OPENAI_API_KEY }}"
       body:
         model: "gpt-4o-mini"
         messages:
