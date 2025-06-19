@@ -22,10 +22,10 @@ logger = logging.getLogger(__name__)
 
 # Constants
 DB_PATH = "knowledge_base.db"
-SIMILARITY_THRESHOLD = 0.72  # Lowered threshold for better recall
-MAX_RESULTS = 15  # Increased to get more context
+SIMILARITY_THRESHOLD = 0.65  # Lowered threshold for better recall
+MAX_RESULTS = 20  # Increased to get more context
 load_dotenv()
-MAX_CONTEXT_CHUNKS = 5  # Increased number of chunks per source
+MAX_CONTEXT_CHUNKS = 8 # Increased number of chunks per source
 API_KEY = os.getenv("OPENAI_API_KEY")  # Get API key from environment variable
 
 # Models
